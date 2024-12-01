@@ -204,7 +204,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="${config}beauty-desktop6-opt.jpg"
+                src="${config.imagePath}beauty-desktop6-opt.jpg"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
