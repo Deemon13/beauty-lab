@@ -19,7 +19,7 @@
             </li>
           </ul>
         </nav>
-      </div>`;const d=n=>`./images/${n}`,c=document.createElement("main");c.innerHTML=`
+      </div>`;const d=n=>`../../images/${n}`,c=document.createElement("main");c.innerHTML=`
 <!-- HERO -->
       <section>
         <div class="container container-hero">
@@ -248,4 +248,4 @@
         </ul>
       </div>
 `;const s=document.querySelector("#app");s.append(o);s.append(c);s.append(a);
-//# sourceMappingURL=index-CRDMDSpW.js.map
+//# sourceMappingURL=index-MqpJ62wx.js.map
