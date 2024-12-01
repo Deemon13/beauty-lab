@@ -202,7 +202,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="/src/images/beauty-desktop6-opt.jpg"
+                src="../../images/beauty-desktop6-opt.jpg"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
