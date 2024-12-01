@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))n(i);new MutationObserver(i=>{for(const l of i)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&n(t)}).observe(document,{childList:!0,subtree:!0});function r(i){const l={};return i.integrity&&(l.integrity=i.integrity),i.referrerPolicy&&(l.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?l.credentials="include":i.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function n(i){if(i.ep)return;i.ep=!0;const l=r(i);fetch(i.href,l)}})();const o=document.createElement("header");o.innerHTML=`<div class="container">
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))s(i);new MutationObserver(i=>{for(const l of i)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&s(t)}).observe(document,{childList:!0,subtree:!0});function c(i){const l={};return i.integrity&&(l.integrity=i.integrity),i.referrerPolicy&&(l.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?l.credentials="include":i.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function s(i){if(i.ep)return;i.ep=!0;const l=c(i);fetch(i.href,l)}})();const n=document.createElement("header");n.innerHTML=`<div class="container">
         <nav class="navigation">
           <a href="" class="logo link">Beauty-lab</a>
           <ul class="nav-list list">
@@ -19,7 +19,7 @@
             </li>
           </ul>
         </nav>
-      </div>`;const p="/beauty-lab/assets/beauty-desktop1-opt-Cfltr40y.jpg",d="/beauty-lab/assets/beauty-desktop2-opt-CrHvUm-m.jpg",u="/beauty-lab/assets/beauty-desktop3-opt-BXo46Hvg.jpg",h="/beauty-lab/assets/beauty-desktop4-opt-DtW67YKD.jpg",m="/beauty-lab/assets/beauty-desktop5-opt-Bvv-xz0A.jpg",f="/beauty-lab/assets/beauty-desktop6-opt-BYspke37.jpg",c=document.createElement("main");c.innerHTML=`
+      </div>`;const r="/beauty-lab/assets/beauty-desktop1-opt-Cfltr40y.jpg",p="/beauty-lab/assets/beauty-desktop2-opt-CrHvUm-m.jpg",u="/beauty-lab/assets/beauty-desktop3-opt-BXo46Hvg.jpg",d="/beauty-lab/assets/beauty-desktop4-opt-DtW67YKD.jpg",h="/beauty-lab/assets/beauty-desktop5-opt-Bvv-xz0A.jpg",m="/beauty-lab/assets/beauty-desktop6-opt-BYspke37.jpg",o=document.createElement("main");o.innerHTML=`
 <!-- HERO -->
       <section>
         <div class="container container-hero">
@@ -179,7 +179,7 @@
           <ul>
             <li>
               <img
-                src="${p}"
+                src="${r}"
                 alt="Пример процедуры"
                 width="290"
                 height="290"
@@ -187,7 +187,7 @@
             </li>
             <li>
               <img
-                src="${d}"
+                src="${p}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -196,6 +196,14 @@
             <li>
               <img
                 src="${u}"
+                alt="Пример процедуры"
+                width="390"
+                height="270"
+              />
+            </li>
+            <li>
+              <img
+                src="${d}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -212,14 +220,6 @@
             <li>
               <img
                 src="${m}"
-                alt="Пример процедуры"
-                width="390"
-                height="270"
-              />
-            </li>
-            <li>
-              <img
-                src="${f}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -247,5 +247,5 @@
           <li><a href="">Facebook</a></li>
         </ul>
       </div>
-`;const s=document.querySelector("#app");s.append(o);s.append(c);s.append(a);
-//# sourceMappingURL=index-Bhwy29GC.js.map
+`;const f=document.querySelector("#app");f.append(n,o,a);
+//# sourceMappingURL=index-B1waw4Rc.js.map
