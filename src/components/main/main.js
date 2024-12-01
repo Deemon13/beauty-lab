@@ -1,6 +1,6 @@
 import "./main.css";
 
-import { config } from "../../config";
+import { image1, image2, image3, image4, image5, image6 } from "../../images";
 
 export const main = document.createElement("main");
 
@@ -164,7 +164,7 @@ main.innerHTML = `
           <ul>
             <li>
               <img
-                src="./src/images/beauty-desktop1-opt.jpg"
+                src="${image1}"
                 alt="Пример процедуры"
                 width="290"
                 height="290"
@@ -172,7 +172,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="./src/images/beauty-desktop2-opt.jpg"
+                src="${image2}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -180,7 +180,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="./src/images/beauty-desktop3-opt.jpg"
+                src="${image3}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -188,7 +188,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="./src/images/beauty-desktop4-opt.jpg"
+                src="${image4}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -196,7 +196,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="./src/images/beauty-desktop5-opt.jpg"
+                src="${image5}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -204,7 +204,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="${config.imagePath}beauty-desktop6-opt.jpg"
+                src="${image6}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
