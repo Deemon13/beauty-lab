@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))n(i);new MutationObserver(i=>{for(const l of i)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&n(t)}).observe(document,{childList:!0,subtree:!0});function r(i){const l={};return i.integrity&&(l.integrity=i.integrity),i.referrerPolicy&&(l.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?l.credentials="include":i.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function n(i){if(i.ep)return;i.ep=!0;const l=r(i);fetch(i.href,l)}})();const o=document.createElement("header");o.innerHTML=`<div class="container">
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))n(i);new MutationObserver(i=>{for(const l of i)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&n(t)}).observe(document,{childList:!0,subtree:!0});function c(i){const l={};return i.integrity&&(l.integrity=i.integrity),i.referrerPolicy&&(l.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?l.credentials="include":i.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function n(i){if(i.ep)return;i.ep=!0;const l=c(i);fetch(i.href,l)}})();const o=document.createElement("header");o.innerHTML=`<div class="container">
         <nav class="navigation">
           <a href="" class="logo link">Beauty-lab</a>
           <ul class="nav-list list">
@@ -19,7 +19,7 @@
             </li>
           </ul>
         </nav>
-      </div>`;const p={imagePath:"./src/images/"},c=document.createElement("main");c.innerHTML=`
+      </div>`;const p="/beauty-lab/assets/beauty-desktop6-opt-BYspke37.jpg",r=document.createElement("main");r.innerHTML=`
 <!-- HERO -->
       <section>
         <div class="container container-hero">
@@ -219,7 +219,7 @@
             </li>
             <li>
               <img
-                src="${p.imagePath}beauty-desktop6-opt.jpg"
+                src="${p}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -247,5 +247,5 @@
           <li><a href="">Facebook</a></li>
         </ul>
       </div>
-`;const s=document.querySelector("#app");s.append(o);s.append(c);s.append(a);
-//# sourceMappingURL=index-CpKG2vdj.js.map
+`;const s=document.querySelector("#app");s.append(o);s.append(r);s.append(a);
+//# sourceMappingURL=index-U1R2wtS5.js.map
