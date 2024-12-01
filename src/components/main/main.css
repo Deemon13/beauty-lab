@@ -1,0 +1,28 @@
+.container-hero {
+  min-height: 600px;
+
+  text-align: center;
+
+  background-color: var(--subtitles-dark-text-color);
+}
+
+.contacts-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contact-link {
+  /* font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--main-dark-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}

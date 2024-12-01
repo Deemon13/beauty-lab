@@ -1,0 +1,49 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  padding-top: 40px;
+  font-family: "Beatrix Antiqua";
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 1.18;
+  text-transform: uppercase;
+
+  color: var(--titles-dark-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.005em;
+
+  color: var(--main-dark-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
