@@ -1,5 +1,7 @@
 import "./main.css";
 
+import { config } from "../../config";
+
 export const main = document.createElement("main");
 
 main.innerHTML = `
@@ -202,7 +204,7 @@ main.innerHTML = `
             </li>
             <li>
               <img
-                src="../../images/beauty-desktop6-opt.jpg"
+                src="${config}beauty-desktop6-opt.jpg"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
