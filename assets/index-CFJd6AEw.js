@@ -219,7 +219,7 @@
             </li>
             <li>
               <img
-                src="./src/images/beauty-desktop6-opt.jpg"
+                src="./images/beauty-desktop6-opt.jpg"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -248,4 +248,4 @@
         </ul>
       </div>
 `;const s=document.querySelector("#app");s.append(o);s.append(r);s.append(a);
-//# sourceMappingURL=index-BRHc4Lt7.js.map
+//# sourceMappingURL=index-CFJd6AEw.js.map
