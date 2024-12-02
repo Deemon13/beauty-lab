@@ -1,6 +1,6 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))p(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const a of i.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&p(a)}).observe(document,{childList:!0,subtree:!0});function m(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function p(e){if(e.ep)return;e.ep=!0;const i=m(e);fetch(e.href,i)}})();const s=document.createElement("div");s.className="container";const l=document.createElement("a");l.setAttribute("href","#");l.classList.add("logo","link");l.innerText="Beauty-lab";const h=[{id:"services",name:"Услуги"},{id:"about",name:"Разрешите представиться"},{id:"description",name:"А поконкретнее"},{id:"portfolio",name:"Примеры работ"},{id:"contacts",name:"Контакты"}],g=h.map(({id:r,name:t})=>`<li class="nav-list-item">
-              <a href="#${r}" class="nav-link link">${t}</a>
-            </li>`).join(""),n=document.createElement("ul");n.classList.add("nav-list","list");n.insertAdjacentHTML("beforeend",g);const o=document.createElement("nav");o.className="navigation";o.append(l,n);const d=document.createElement("header");s.append(o);d.append(s);const f="/beauty-lab/assets/beauty-desktop1-opt-Cfltr40y.jpg",b="/beauty-lab/assets/beauty-desktop2-opt-CrHvUm-m.jpg",v="/beauty-lab/assets/beauty-desktop3-opt-BXo46Hvg.jpg",y="/beauty-lab/assets/beauty-desktop4-opt-DtW67YKD.jpg",E="/beauty-lab/assets/beauty-desktop5-opt-Bvv-xz0A.jpg",O="/beauty-lab/assets/beauty-desktop6-opt-BYspke37.jpg",u=document.createElement("main");u.innerHTML=`
+(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))f(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const a of t.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&f(a)}).observe(document,{childList:!0,subtree:!0});function L(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function f(e){if(e.ep)return;e.ep=!0;const t=L(e);fetch(e.href,t)}})();const n=document.createElement("a");n.setAttribute("href","#");n.classList.add("logo","link");n.innerText="Beauty-lab";const T=[{id:"services",name:"Услуги"},{id:"about",name:"Разрешите представиться"},{id:"description",name:"А поконкретнее"},{id:"portfolio",name:"Примеры работ"},{id:"contacts",name:"Контакты"}],j=T.map(({id:i,name:l})=>`<li class="nav-list-item">
+              <a href="#${i}" class="nav-link link">${l}</a>
+            </li>`).join(""),o=document.createElement("ul");o.classList.add("nav-list","list");o.insertAdjacentHTML("beforeend",j);const s=document.createElement("nav");s.className="navigation";s.append(n,o);const c=document.createElement("div");c.className="container";c.append(s);const g=document.createElement("header");g.append(c);const O="/beauty-lab/assets/beauty-desktop1-opt-Cfltr40y.jpg",k="/beauty-lab/assets/beauty-desktop2-opt-CrHvUm-m.jpg",A="/beauty-lab/assets/beauty-desktop3-opt-BXo46Hvg.jpg",$="/beauty-lab/assets/beauty-desktop4-opt-DtW67YKD.jpg",x="/beauty-lab/assets/beauty-desktop5-opt-Bvv-xz0A.jpg",I="/beauty-lab/assets/beauty-desktop6-opt-BYspke37.jpg",b=document.createElement("main");b.innerHTML=`
 <!-- HERO -->
       <section>
         <div class="container container-hero">
@@ -160,7 +160,7 @@
           <ul>
             <li>
               <img
-                src="${f}"
+                src="${O}"
                 alt="Пример процедуры"
                 width="290"
                 height="290"
@@ -168,7 +168,7 @@
             </li>
             <li>
               <img
-                src="${b}"
+                src="${k}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -176,7 +176,7 @@
             </li>
             <li>
               <img
-                src="${v}"
+                src="${A}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -184,7 +184,7 @@
             </li>
             <li>
               <img
-                src="${y}"
+                src="${$}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -192,7 +192,7 @@
             </li>
             <li>
               <img
-                src="${E}"
+                src="${x}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -200,7 +200,7 @@
             </li>
             <li>
               <img
-                src="${O}"
+                src="${I}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -209,24 +209,5 @@
           </ul>
         </div>
       </section>
-`;const c=document.createElement("footer");c.setAttribute("id","contacts");c.innerHTML=`
-      <div class="container">
-        <a href="">Beauty-lab</a>
-        <h3>Алена Федоренко</h3>
-        <p>Косметик</p>
-        <address>
-          <p>г. Энергодар</p>
-          <p>г. Днепр</p>
-          <p>г. Киев</p>
-          <a href="tel:+380662474248">066-247-42-48</a>
-          <a href="mailt:alena.mudarisovna@gmail.com"
-            >alena.mudarisovna@gmail.com</a
-          >
-        </address>
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Facebook</a></li>
-        </ul>
-      </div>
-`;const k=document.querySelector("#app");k.append(d,u,c);
-//# sourceMappingURL=index-CE10hUnb.js.map
+`;const r=document.createElement("a");r.setAttribute("href","#");r.innerText="Beauty-lab";const v=document.createElement("h3");v.innerText="Алена Федоренко";const y=document.createElement("p");y.innerText="Косметик";const w=["Энергодар"],B=w.map(i=>`<p>г. ${i}</p>`).join(""),d=document.createElement("a");d.setAttribute("href","tel:+79902457795");d.innerText="+7(990)245-77-95";const p=document.createElement("a");p.setAttribute("href","mailto:alena.mudarisovna@yandex.ru");p.innerText="alena.mudarisovna@yandex.ru";const m=document.createElement("address");m.insertAdjacentHTML("beforeend",B);m.append(d,p);const H=["Instagram","Facebook"],E=document.createElement("ul"),M=H.map(i=>`<li><a href="#">${i}</a></li>`).join("");E.insertAdjacentHTML("beforeend",M);const u=document.createElement("div");u.className="container";u.append(r,v,y,m,E);const h=document.createElement("footer");h.setAttribute("id","contacts");h.append(u);const N=document.querySelector("#app");N.append(g,b,h);
+//# sourceMappingURL=index-32bhT8mC.js.map
