@@ -1,25 +1,6 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))s(i);new MutationObserver(i=>{for(const l of i)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&s(t)}).observe(document,{childList:!0,subtree:!0});function c(i){const l={};return i.integrity&&(l.integrity=i.integrity),i.referrerPolicy&&(l.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?l.credentials="include":i.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function s(i){if(i.ep)return;i.ep=!0;const l=c(i);fetch(i.href,l)}})();const n=document.createElement("header");n.innerHTML=`<div class="container">
-        <nav class="navigation">
-          <a href="" class="logo link">Beauty-lab</a>
-          <ul class="nav-list list">
-            <li class="nav-list-item">
-              <a href="#services" class="nav-link link">Услуги</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#about" class="nav-link link">Разрешите представиться</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#description" class="nav-link link">А поконкретнее</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#portfolio" class="nav-link link">Примеры работ</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#contacts" class="nav-link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>`;const r="/beauty-lab/assets/beauty-desktop1-opt-Cfltr40y.jpg",p="/beauty-lab/assets/beauty-desktop2-opt-CrHvUm-m.jpg",u="/beauty-lab/assets/beauty-desktop3-opt-BXo46Hvg.jpg",d="/beauty-lab/assets/beauty-desktop4-opt-DtW67YKD.jpg",h="/beauty-lab/assets/beauty-desktop5-opt-Bvv-xz0A.jpg",m="/beauty-lab/assets/beauty-desktop6-opt-BYspke37.jpg",o=document.createElement("main");o.innerHTML=`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))p(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const a of i.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&p(a)}).observe(document,{childList:!0,subtree:!0});function m(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function p(e){if(e.ep)return;e.ep=!0;const i=m(e);fetch(e.href,i)}})();const s=document.createElement("div");s.className="container";const l=document.createElement("a");l.setAttribute("href","#");l.classList.add("logo","link");l.innerText="Beauty-lab";const h=[{id:"services",name:"Услуги"},{id:"about",name:"Разрешите представиться"},{id:"description",name:"А поконкретнее"},{id:"portfolio",name:"Примеры работ"},{id:"contacts",name:"Контакты"}],g=h.map(({id:r,name:t})=>`<li class="nav-list-item">
+              <a href="#${r}" class="nav-link link">${t}</a>
+            </li>`).join(""),n=document.createElement("ul");n.classList.add("nav-list","list");n.insertAdjacentHTML("beforeend",g);const o=document.createElement("nav");o.className="navigation";o.append(l,n);const d=document.createElement("header");s.append(o);d.append(s);const f="/beauty-lab/assets/beauty-desktop1-opt-Cfltr40y.jpg",b="/beauty-lab/assets/beauty-desktop2-opt-CrHvUm-m.jpg",v="/beauty-lab/assets/beauty-desktop3-opt-BXo46Hvg.jpg",y="/beauty-lab/assets/beauty-desktop4-opt-DtW67YKD.jpg",E="/beauty-lab/assets/beauty-desktop5-opt-Bvv-xz0A.jpg",O="/beauty-lab/assets/beauty-desktop6-opt-BYspke37.jpg",u=document.createElement("main");u.innerHTML=`
 <!-- HERO -->
       <section>
         <div class="container container-hero">
@@ -179,7 +160,7 @@
           <ul>
             <li>
               <img
-                src="${r}"
+                src="${f}"
                 alt="Пример процедуры"
                 width="290"
                 height="290"
@@ -187,7 +168,7 @@
             </li>
             <li>
               <img
-                src="${p}"
+                src="${b}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -195,7 +176,7 @@
             </li>
             <li>
               <img
-                src="${u}"
+                src="${v}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -203,7 +184,7 @@
             </li>
             <li>
               <img
-                src="${d}"
+                src="${y}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -211,7 +192,7 @@
             </li>
             <li>
               <img
-                src="${h}"
+                src="${E}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -219,7 +200,7 @@
             </li>
             <li>
               <img
-                src="${m}"
+                src="${O}"
                 alt="Пример процедуры"
                 width="390"
                 height="270"
@@ -228,7 +209,7 @@
           </ul>
         </div>
       </section>
-`;const a=document.createElement("footer");a.setAttribute("id","contacts");a.innerHTML=`
+`;const c=document.createElement("footer");c.setAttribute("id","contacts");c.innerHTML=`
       <div class="container">
         <a href="">Beauty-lab</a>
         <h3>Алена Федоренко</h3>
@@ -247,5 +228,5 @@
           <li><a href="">Facebook</a></li>
         </ul>
       </div>
-`;const f=document.querySelector("#app");f.append(n,o,a);
-//# sourceMappingURL=index-B1waw4Rc.js.map
+`;const k=document.querySelector("#app");k.append(d,u,c);
+//# sourceMappingURL=index-CE10hUnb.js.map
